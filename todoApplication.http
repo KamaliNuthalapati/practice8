@@ -1,0 +1,25 @@
+###
+GET http://localhost:7000/todos/
+
+###
+GET http://localhost:7000/todos/3/
+
+###
+POST http://localhost:7000/todos/
+Content-Type: application/json 
+
+{
+    "id": 1,
+    "todo": "Watch Movie",
+    "priority": "LOW",
+    "status": "TO DO"
+}
+
+###
+PUT http://localhost:7000/todos/2/
+Content-Type: application/json 
+
+{ "status": "DONE" }
+
+###
+DELETE http://localhost:7000/todos/3/
